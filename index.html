@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이미지 자르기 앱</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <p class="badge">APP 2</p>
+      <h1>이미지 자르기 앱</h1>
+      <p>JPG, PNG 이미지를 업로드하고 원하는 비율로 자른 뒤 새 이미지로 다운로드할 수 있습니다.</p>
+    </header>
+
+    <section class="panel">
+      <label class="upload-box" for="imageInput">
+        <strong>이미지 파일 선택</strong>
+        <span>JPG 또는 PNG 파일을 업로드하세요.</span>
+      </label>
+      <input type="file" id="imageInput" accept="image/png, image/jpeg" />
+
+      <div class="controls">
+        <button data-ratio="1">1:1</button>
+        <button data-ratio="1.3333333333">4:3</button>
+        <button data-ratio="1.7777777778">16:9</button>
+        <button data-ratio="free">자유 비율</button>
+        <button id="downloadBtn" disabled>자른 이미지 다운로드</button>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <div class="image-wrap">
+        <img id="preview" alt="업로드한 이미지 미리보기" />
+      </div>
+      <p id="status">아직 업로드된 이미지가 없습니다.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

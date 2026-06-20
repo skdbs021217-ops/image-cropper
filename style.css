@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", Arial, sans-serif;
+  background: linear-gradient(135deg, #f1f5ff, #ffffff);
+  color: #1f2937;
+}
+
+.app {
+  width: min(1050px, 92%);
+  margin: 40px auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 38px 24px;
+  background: white;
+  border-radius: 26px;
+  box-shadow: 0 12px 30px rgba(70, 92, 150, 0.12);
+}
+
+.badge {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #e9e5ff;
+  color: #6049b8;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0 0 12px;
+  color: #3b327f;
+}
+
+.panel, .workspace {
+  margin-top: 24px;
+  padding: 24px;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 8px 24px rgba(70, 92, 150, 0.1);
+}
+
+.upload-box {
+  display: block;
+  padding: 34px;
+  border: 2px dashed #a99be8;
+  border-radius: 18px;
+  text-align: center;
+  cursor: pointer;
+  background: #faf9ff;
+}
+
+.upload-box strong {
+  display: block;
+  font-size: 22px;
+  color: #5040a5;
+  margin-bottom: 8px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 18px;
+  background: #6554d9;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4e3fbd;
+}
+
+button:disabled {
+  background: #b4afcf;
+  cursor: not-allowed;
+}
+
+#downloadBtn {
+  background: #2f8f72;
+}
+
+#downloadBtn:hover {
+  background: #21765d;
+}
+
+.image-wrap {
+  width: 100%;
+  min-height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f7fb;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+#preview {
+  display: block;
+  max-width: 100%;
+  max-height: 650px;
+}
